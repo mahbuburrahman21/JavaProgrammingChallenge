@@ -27,8 +27,6 @@ public class Challenge43 {
             i++;
         }
     }
-
-
     public static boolean ascendingCheck(int[] myArr){
         int i = 0;
         while (i<myArr.length-1){
