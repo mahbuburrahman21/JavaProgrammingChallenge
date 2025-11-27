@@ -9,27 +9,27 @@ public class Challenge50 {
         int column = input.nextInt();
 
         int[][] myArr = new int[rows][column];
-        arrayInput(myArr, rows, column);
+         Challenge49.arrayInput(myArr, rows, column);
 
         int sum = sumOf2DiagonalElement(myArr, rows,column);
         System.out.println("Summation of two diagonal element the array is: "+sum);
 
     }
 
-    public static void arrayInput(int[][] myArr, int rows, int column){
-        Scanner input = new Scanner(System.in);
-        int i=0;
-        while (i<rows){
-            int j=0;
-            while (j<column){
-                System.out.print("Enter array element row wise: ");
-                int element = input.nextInt();
-                myArr[i][j] = element;
-                j++;
-            }
-            i++;
-        }
-    }
+//    public static void arrayInput(int[][] myArr, int rows, int column){
+//        Scanner input = new Scanner(System.in);
+//        int i=0;
+//        while (i<rows){
+//            int j=0;
+//            while (j<column){
+//                System.out.print("Enter array element row wise: ");
+//                int element = input.nextInt();
+//                myArr[i][j] = element;
+//                j++;
+//            }
+//            i++;
+//        }
+//    }
 
     public static int sumOf2DiagonalElement(int[][] myArr,int rows , int column){
         int i = 0;
