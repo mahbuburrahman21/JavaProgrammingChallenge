@@ -2,8 +2,8 @@ import java.util.Scanner;
 public class Challenge74_numberGuess_Game {
      static void main(String[] args) {
         Scanner input = new Scanner(System.in);
-        int attempt = 0;
-        int correctGuessCount =0;
+        double attempt = 0;
+        double correctGuessCount =0;
         System.out.println("Welcome to Guess number Game!.......");
         System.out.println("Enter 1 to 10 numbers.......");
         System.out.println("Enter 100 if you want to exit.......");
@@ -29,7 +29,8 @@ public class Challenge74_numberGuess_Game {
         }
         System.out.println("Your Total attempt: "+ attempt);
         System.out.println("Your Total Correct Guess: "+ correctGuessCount);
-        System.out.println("Success rate: "+ ((correctGuessCount/attempt)*100)+ " ");
+        double success = ((correctGuessCount/attempt)*100);
+        System.out.println("Success rate: "+ success + " %");
         input.close();
     }
 }
