@@ -29,6 +29,7 @@ public class Challenge74_numberGuess_Game {
         }
         System.out.println("Your Total attempt: "+ attempt);
         System.out.println("Your Total Correct Guess: "+ correctGuessCount);
+        System.out.println("Success rate: "+ ((correctGuessCount/attempt)*100)+ " ");
         input.close();
     }
 }
